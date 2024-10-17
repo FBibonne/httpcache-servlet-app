@@ -67,8 +67,11 @@ By this way, one can fill very quickly public caches
 ## References
 
 - https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-caching.html#mvc-caching-cachecontrol
+- https://docs.spring.io/spring-framework/reference/web/webmvc/filters.html#filters-shallow-etag
 - https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#fixed-fields-15
 - https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#header-object
 - https://github.com/OAI/OpenAPI-Specification/issues/2784
-- [RFC 7234 sur le cache en http](https://datatracker.ietf.org/doc/html/rfc7234#section-2)
+- [Hhttp fileds (headers)](https://www.iana.org/assignments/http-fields/http-fields.xhtml)
+- [RFC 9111 about http caching](https://datatracker.ietf.org/doc/html/rfc9111)
+- [RFC 9110 : etag](https://datatracker.ietf.org/doc/html/rfc9110#name-etag)
 - [[DEVFEST Lille 2023] - #RetourAuxSources : Le cache HTTP - Hubert Sablonnière](https://www.youtube.com/watch?v=Tfag9MPb6YM) 🇫🇷
