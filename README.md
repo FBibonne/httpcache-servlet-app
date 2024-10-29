@@ -1,10 +1,10 @@
 # HttpCache extension for Spring MVC
 
-The HttpCache extension for Spring MVC is a library which aim to extends Spring MVC in order to make easier http caching for controllers endpoints annotated with `@HttpCache`. The library also contains [the definition of the `@HttpCache` annotation](link/to/HttpCache/source)
+The HttpCache extension for Spring MVC is a library which aim to extends Spring MVC in order to make easier http caching for controllers endpoints annotated with `@HttpCache`. The library also contains [the definition of the `@HttpCache` annotation](src/main/java/poc/httpcache/annotation/HttpCache.java)
 
-## How to use it
+## How to use it [WIP]
 
-Simple steps for getting started with a classical WebMvc annotation.
+Simple steps for getting started with a classical WebMvc application.
 
 ### Install it
 
@@ -20,7 +20,7 @@ Now, if you run the application, you can verify that the annotated endpoints ser
 
 How to write tests to verify that required cache headers are available
 
-## Http Caching : how does it work
+## Http Caching : how does it work [WIP]
 
 ### What is http caching and why it is relevant for APIs
 
@@ -41,9 +41,11 @@ A simple example explained
 - cache-control directives for server
 - obsolete directives
 
-## More about the lib
+## More about the lib 
 
-## Security concerns
+WIP
+
+## Security concerns [WIP]
 
 - private attribute for `cache-control`  directive 
 - no-store attribute for `cache-control`  directive
@@ -52,7 +54,7 @@ A simple example explained
  
 Client -> Browser memory cache (PRIVATE) -> Browser disk cache (PRIVATE) -> CDN (PUBLIC - SHARE) -> Reverse Proxy (PUBLIC - SHARE) -> Server
 
-## ` vary` 
+## ` vary` [WIP]
 
 The server can put the header vary on its response to instruct the cache to store various exemplaries of a resource
 
@@ -75,3 +77,4 @@ By this way, one can fill very quickly public caches
 - [RFC 9111 about http caching](https://datatracker.ietf.org/doc/html/rfc9111)
 - [RFC 9110 : etag](https://datatracker.ietf.org/doc/html/rfc9110#name-etag)
 - [[DEVFEST Lille 2023] - #RetourAuxSources : Le cache HTTP - Hubert Sablonnière](https://www.youtube.com/watch?v=Tfag9MPb6YM) 🇫🇷
+- https://blog.payara.fish/caching-rest-resources-in-jakarta-rest-formerly-jax-rs
