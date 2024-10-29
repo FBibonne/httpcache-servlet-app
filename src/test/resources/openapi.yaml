@@ -1,0 +1,48 @@
+openapi: 3.1.0
+info:
+  description: >-
+    Sample OAS file for example api to test cache extension
+  version: 1.0.0
+  title: OpenAPI HttpCache Example
+tags:
+  - name: commune
+    description: list all communes
+paths:
+  /communes:
+    get:
+      tags:
+        - commune
+      summary: Find all communes
+      description: Find all communes
+      operationId: getAllCommunes
+      responses:
+        '200':
+          x-cache: enabled
+          description: successful operation
+          content:
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Commune'
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Commune'
+components:
+  schemas:
+    Commune:
+      title: a Commune
+      description: Commune is a city
+      type: object
+      required:
+        - code
+      properties:
+        code:
+          type: string
+          example: 33529
+        name:
+          type: string
+          description: long name of the commune
+          example: 'La Teste de Buch'
