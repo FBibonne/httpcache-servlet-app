@@ -1,18 +1,19 @@
-# HttpCache extension for Spring MVC
+# Http caching filter for jakarta servlet applications 
 
-The HttpCache extension for Spring MVC is a library which aim to extends Spring MVC in order to make easier http caching for controllers endpoints annotated with `@HttpCache`. The library also contains [the definition of the `@HttpCache` annotation](src/main/java/poc/httpcache/annotation/HttpCache.java)
+The Http caching filter for jakarta servlet applications is a library which aim to enable http caching for jakarta servlet applications according to http caching
+information provided by an openAPI specification.
 
 ## How to use it [WIP]
 
-Simple steps for getting started with a classical WebMvc application.
+Simple steps for getting started with a classical jakarta servlet application.
 
 ### Install it
 
 - Add to dependencies
 
-### Anotate your controlers for http caching
+### Add a openAPI specification in the classpath
 
-- Anotate Controller methods
+Write a openAPI specification file in the ` src/main/resources` of your project with `x-cache` extensions inside responses code.
 
 Now, if you run the application, you can verify that the annotated endpoints serve cache headers with resources.
 
